@@ -1,0 +1,404 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "sources": "src",
+    "tests": "test",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "/home/iwura/Documents/Dreamers/lib/ERC721A/contracts/ERC721A.sol": {
+      "lastModificationDate": 1654339289940,
+      "contentHash": "47150422025ca7b584be158021af075d",
+      "sourceName": "lib/ERC721A/contracts/ERC721A.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ERC721A/contracts/IERC721A.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/ERC721A/contracts/IERC721A.sol": {
+      "lastModificationDate": 1654339289940,
+      "contentHash": "1c2f42fcdcf15aa6af63e08860629eb1",
+      "sourceName": "lib/ERC721A/contracts/IERC721A.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1654337044445,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.10+commit.fc410830.Linux.gcc": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1654339502889,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1654339502897,
+      "contentHash": "9c2dccab8e3a43a18c41e358763fe4d8",
+      "sourceName": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1654339502897,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+      "lastModificationDate": 1654339502901,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1654339502901,
+      "contentHash": "25cf4bc7f86a32af587e4f927cf61752",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/src/Contract.sol": {
+      "lastModificationDate": 1654339438717,
+      "contentHash": "70540dcbf8a5de663f237833779ca4bd",
+      "sourceName": "src/Contract.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/src/dreamers.sol": {
+      "lastModificationDate": 1654369563759,
+      "contentHash": "61205e33862c59272a5a3fe2e04f89d7",
+      "sourceName": "src/dreamers.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ERC721A/contracts/ERC721A.sol",
+        "lib/ERC721A/contracts/IERC721A.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "Dreamers": {
+          "0.8.10+commit.fc410830.Linux.gcc": "dreamers.sol/Dreamers.json"
+        }
+      }
+    },
+    "/home/iwura/Documents/Dreamers/src/test/Contract.t.sol": {
+      "lastModificationDate": 1654337034190,
+      "contentHash": "7016738fe305fd90c36ea69a5cb2a78c",
+      "sourceName": "src/test/Contract.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "ContractTest": {
+          "0.8.10+commit.fc410830.Linux.gcc": "Contract.t.sol/ContractTest.json"
+        }
+      }
+    }
+  }
+}
