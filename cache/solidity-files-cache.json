@@ -77,43 +77,6 @@
       "versionRequirement": "^0.8.4",
       "artifacts": {}
     },
-    "/home/iwura/Documents/Dreamers/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1654337044445,
-      "contentHash": "962996f0e05d5218857a538a62d7c47e",
-      "sourceName": "lib/ds-test/src/test.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london"
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.5.0",
-      "artifacts": {
-        "DSTest": {
-          "0.8.10+commit.fc410830.Linux.gcc": "test.sol/DSTest.json"
-        }
-      }
-    },
     "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
       "lastModificationDate": 1654339502889,
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
@@ -317,8 +280,8 @@
       "artifacts": {}
     },
     "/home/iwura/Documents/Dreamers/src/dreamers.sol": {
-      "lastModificationDate": 1654369563759,
-      "contentHash": "61205e33862c59272a5a3fe2e04f89d7",
+      "lastModificationDate": 1655105599956,
+      "contentHash": "1998f2761a2fc6681ea982984a19d8fe",
       "sourceName": "src/dreamers.sol",
       "solcConfig": {
         "settings": {
@@ -355,15 +318,11 @@
         "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol"
       ],
       "versionRequirement": "=0.8.10",
-      "artifacts": {
-        "Dreamers": {
-          "0.8.10+commit.fc410830.Linux.gcc": "dreamers.sol/Dreamers.json"
-        }
-      }
+      "artifacts": {}
     },
     "/home/iwura/Documents/Dreamers/src/test/Contract.t.sol": {
-      "lastModificationDate": 1654337034190,
-      "contentHash": "7016738fe305fd90c36ea69a5cb2a78c",
+      "lastModificationDate": 1655109440830,
+      "contentHash": "be041fe19ccbd0a2f180c995bc2ec74c",
       "sourceName": "src/test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -390,15 +349,51 @@
           "evmVersion": "london"
         }
       },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/home/iwura/Documents/Dreamers/src/test/dreamers.t.sol": {
+      "lastModificationDate": 1655108287197,
+      "contentHash": "9aa3a9a081588f38f36cfdd7ce266e54",
+      "sourceName": "src/test/dreamers.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
       "imports": [
-        "lib/ds-test/src/test.sol"
+        "lib/ERC721A/contracts/ERC721A.sol",
+        "lib/ERC721A/contracts/IERC721A.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol",
+        "src/dreamers.sol"
       ],
       "versionRequirement": "=0.8.10",
-      "artifacts": {
-        "ContractTest": {
-          "0.8.10+commit.fc410830.Linux.gcc": "Contract.t.sol/ContractTest.json"
-        }
-      }
+      "artifacts": {}
     }
   }
 }

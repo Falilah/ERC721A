@@ -11,6 +11,7 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 contract Dreamers is ERC721A, Ownable, Pausable, ReentrancyGuard {
   uint256 public constant PRESALEQTY = 5000;
   uint256 public  teamQtyMinted;
+  string private _baseTokenURI;
 
 
     struct PresaleProps {
@@ -49,6 +50,17 @@ contract Dreamers is ERC721A, Ownable, Pausable, ReentrancyGuard {
     function unPause() external onlyOwner{
         _unpause();
     }
+
+
+     function _beforeTokenTransfers(
+      address from,
+      address to,
+      uint256 startTokenId,
+      uint256 quantity
+  ) internal virtual whenNotPaused override {
+    super._beforeTokenTransfers(from, to, startTokenId, quantity);
+  }
+
 
 
     function setPresaleProps(
@@ -166,6 +178,21 @@ contract Dreamers is ERC721A, Ownable, Pausable, ReentrancyGuard {
     );
     _safeMint(msg.sender, quantity);
     _setAux(_msgSender(), _getAux(_msgSender()) + quantity);  
+  }
+
+
+  function _baseURI() internal view virtual override returns (string memory) {
+    return _baseTokenURI;
+  }
+
+  function setBaseURI(string calldata baseURI) external onlyOwner {
+    _baseTokenURI = baseURI;
+  }
+
+
+  function withdrawMoney() external onlyOwner nonReentrant {
+    (bool success, ) = msg.sender.call{value: address(this).balance}("");
+    require(success, "transfer failed");
   }
 
 
