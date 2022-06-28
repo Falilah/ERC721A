@@ -1,0 +1,56 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220885eb50600fa4cadd68eb7d716f03acd071de30d3e72d3d9a7a59472a826820a64736f6c634300080a0033",
+    "sourceMap": "65:20:8:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea2646970667358221220885eb50600fa4cadd68eb7d716f03acd071de30d3e72d3d9a7a59472a826820a64736f6c634300080a0033",
+    "sourceMap": "65:20:8:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/iwura/Documents/Dreamers/src/Contract.sol",
+    "exportedSymbols": {
+      "Contract": [
+        4251
+      ]
+    },
+    "id": 4252,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4250,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Contract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 4251,
+        "linearizedBaseContracts": [
+          4251
+        ],
+        "name": "Contract",
+        "nameLocation": "74:8:8",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 4252,
+        "src": "65:20:8",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:47:8"
+  }
+}

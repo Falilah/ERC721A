@@ -1,0 +1,153 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "setUp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "testExample",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
+    "sourceMap": "92:128:10:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
+    "sourceMap": "92:128:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/iwura/Documents/Dreamers/src/test/Contract.t.sol",
+    "exportedSymbols": {
+      "ContractTest": [
+        4846
+      ],
+      "DSTest": [
+        3634
+      ]
+    },
+    "id": 4847,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4836,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:10"
+      },
+      {
+        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/lib/ds-test/src/test.sol",
+        "file": "ds-test/test.sol",
+        "id": 4837,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 4847,
+        "sourceUnit": 3635,
+        "src": "64:26:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ContractTest",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 4846,
+        "linearizedBaseContracts": [
+          4846
+        ],
+        "name": "ContractTest",
+        "nameLocation": "101:12:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4840,
+              "nodeType": "Block",
+              "src": "144:2:10",
+              "statements": []
+            },
+            "functionSelector": "0a9254e4",
+            "id": 4841,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "129:5:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4838,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "134:2:10"
+            },
+            "returnParameters": {
+              "id": 4839,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:0:10"
+            },
+            "scope": 4846,
+            "src": "120:26:10",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4844,
+              "nodeType": "Block",
+              "src": "182:36:10",
+              "statements": []
+            },
+            "functionSelector": "3f5a4a2a",
+            "id": 4845,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testExample",
+            "nameLocation": "161:11:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4842,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "172:2:10"
+            },
+            "returnParameters": {
+              "id": 4843,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "182:0:10"
+            },
+            "scope": 4846,
+            "src": "152:66:10",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 4847,
+        "src": "92:128:10",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:182:10"
+  }
+}
