@@ -105,13 +105,11 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
   function refundIfOver(uint256 price) private {
     require(msg.value >= price, "need to send more ETH");
     if (msg.value > price) {
-      payable(msg.sender).transfer(msg.value - price);
+      uint dif = msg.value - price;
+     (bool success,) = payable(msg.sender).call{value: dif}("");
+     require(success, "transfer failed");
     }
   }
-
-
-
-
 
 
    function numberMinted(address owner) public view returns (uint256) {
@@ -119,7 +117,7 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
   }
 
 
-  function endpRESaleAndSetupPublicSale(
+  function endPreSaleAndSetupPublicSale(
     uint32 publicSaleStartTime,
     uint64 publicSalePriceWei,
     uint64 maxPerAddressDuringPublicSaleMint
@@ -136,6 +134,7 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
     payable
     nonReentrant
   {
+
     uint256 price = uint256(publicSaleProps.price);
     uint256 startTime = uint256(publicSaleProps.startTime);
     uint64 maxPerAddress = publicSaleProps.maxPerAddress;
@@ -148,8 +147,8 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
     require(numberMinted(msg.sender) + quantity <= maxPerAddress,
       "can not mint this many"
     );
-    _safeMint(msg.sender, quantity);
     refundIfOver(price * quantity);
+    _safeMint(msg.sender, quantity);
   }
   function addTeamMember(address member)  external onlyOwner{
     teamMember[member] = true;
@@ -190,7 +189,8 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
 
 
   function withdrawMoney() external onlyOwner nonReentrant {
-    (bool success, ) = msg.sender.call{value: address(this).balance}("");
+    uint totalAmount = address(this).balance;
+    (bool success, ) = owner().call{value: totalAmount}("");
     require(success, "transfer failed");
   }
 

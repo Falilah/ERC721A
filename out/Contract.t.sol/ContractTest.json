@@ -17,47 +17,47 @@
   ],
   "bytecode": {
     "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
-    "sourceMap": "92:128:10:-:0;;;;;;;;;;;;;;;;;;;",
+    "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
     "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
-    "sourceMap": "92:128:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
+    "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
     "linkReferences": {}
   },
   "ast": {
     "absolutePath": "/home/iwura/Documents/Dreamers/src/test/Contract.t.sol",
     "exportedSymbols": {
       "ContractTest": [
-        4846
+        24749
       ],
       "DSTest": [
         3634
       ]
     },
-    "id": 4847,
+    "id": 24750,
     "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4836,
+        "id": 24739,
         "literals": [
           "solidity",
           "0.8",
           ".10"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:23:10"
+        "src": "39:23:17"
       },
       {
         "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/lib/ds-test/src/test.sol",
         "file": "ds-test/test.sol",
-        "id": 4837,
+        "id": 24740,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4847,
+        "scope": 24750,
         "sourceUnit": 3635,
-        "src": "64:26:10",
+        "src": "64:26:17",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -68,86 +68,86 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4846,
+        "id": 24749,
         "linearizedBaseContracts": [
-          4846
+          24749
         ],
         "name": "ContractTest",
-        "nameLocation": "101:12:10",
+        "nameLocation": "101:12:17",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4840,
+              "id": 24743,
               "nodeType": "Block",
-              "src": "144:2:10",
+              "src": "144:2:17",
               "statements": []
             },
             "functionSelector": "0a9254e4",
-            "id": 4841,
+            "id": 24744,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setUp",
-            "nameLocation": "129:5:10",
+            "nameLocation": "129:5:17",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4838,
+              "id": 24741,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "134:2:10"
+              "src": "134:2:17"
             },
             "returnParameters": {
-              "id": 4839,
+              "id": 24742,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "144:0:10"
+              "src": "144:0:17"
             },
-            "scope": 4846,
-            "src": "120:26:10",
+            "scope": 24749,
+            "src": "120:26:17",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4844,
+              "id": 24747,
               "nodeType": "Block",
-              "src": "182:36:10",
+              "src": "182:36:17",
               "statements": []
             },
             "functionSelector": "3f5a4a2a",
-            "id": 4845,
+            "id": 24748,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "testExample",
-            "nameLocation": "161:11:10",
+            "nameLocation": "161:11:17",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4842,
+              "id": 24745,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "172:2:10"
+              "src": "172:2:17"
             },
             "returnParameters": {
-              "id": 4843,
+              "id": 24746,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "182:0:10"
+              "src": "182:0:17"
             },
-            "scope": 4846,
-            "src": "152:66:10",
+            "scope": 24749,
+            "src": "152:66:17",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4847,
-        "src": "92:128:10",
+        "scope": 24750,
+        "src": "92:128:17",
         "usedErrors": []
       }
     ],
-    "src": "39:182:10"
+    "src": "39:182:17"
   }
 }

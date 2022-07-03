@@ -1,0 +1,516 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "IS_SCRIPT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vm",
+      "outputs": [
+        {
+          "internalType": "contract Vm",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/Script.sol",
+    "exportedSymbols": {
+      "Script": [
+        3666
+      ],
+      "Vm": [
+        6613
+      ],
+      "console": [
+        14677
+      ],
+      "console2": [
+        22741
+      ]
+    },
+    "id": 3667,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3636,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "38:31:3"
+      },
+      {
+        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/Vm.sol",
+        "file": "./Vm.sol",
+        "id": 3637,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3667,
+        "sourceUnit": 6614,
+        "src": "71:18:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/console.sol",
+        "file": "./console.sol",
+        "id": 3638,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3667,
+        "sourceUnit": 14678,
+        "src": "90:23:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/console2.sol",
+        "file": "./console2.sol",
+        "id": 3639,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3667,
+        "sourceUnit": 22742,
+        "src": "114:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "Script",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3666,
+        "linearizedBaseContracts": [
+          3666
+        ],
+        "name": "Script",
+        "nameLocation": "158:6:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "f8ccbf47",
+            "id": 3642,
+            "mutability": "mutable",
+            "name": "IS_SCRIPT",
+            "nameLocation": "183:9:3",
+            "nodeType": "VariableDeclaration",
+            "scope": 3666,
+            "src": "171:28:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 3640,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "171:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "74727565",
+              "id": 3641,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "195:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 3659,
+            "mutability": "constant",
+            "name": "VM_ADDRESS",
+            "nameLocation": "230:10:3",
+            "nodeType": "VariableDeclaration",
+            "scope": 3666,
+            "src": "205:110:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 3643,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "205:7:3",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "hexValue": "6865766d20636865617420636f6465",
+                                  "id": 3653,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "string",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "293:17:3",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_stringliteral_885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d",
+                                    "typeString": "literal_string \"hevm cheat code\""
+                                  },
+                                  "value": "hevm cheat code"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_stringliteral_885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d",
+                                    "typeString": "literal_string \"hevm cheat code\""
+                                  }
+                                ],
+                                "id": 3652,
+                                "name": "keccak256",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -8,
+                                "src": "283:9:3",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                                }
+                              },
+                              "id": 3654,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "283:28:3",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            ],
+                            "id": 3651,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "275:7:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint256_$",
+                              "typeString": "type(uint256)"
+                            },
+                            "typeName": {
+                              "id": 3650,
+                              "name": "uint256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "275:7:3",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 3655,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "275:37:3",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 3649,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "267:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_uint160_$",
+                          "typeString": "type(uint160)"
+                        },
+                        "typeName": {
+                          "id": 3648,
+                          "name": "uint160",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "267:7:3",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 3656,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "267:46:3",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint160",
+                        "typeString": "uint160"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_uint160",
+                        "typeString": "uint160"
+                      }
+                    ],
+                    "id": 3647,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "nodeType": "ElementaryTypeNameExpression",
+                    "src": "259:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_type$_t_bytes20_$",
+                      "typeString": "type(bytes20)"
+                    },
+                    "typeName": {
+                      "id": 3646,
+                      "name": "bytes20",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "259:7:3",
+                      "typeDescriptions": {}
+                    }
+                  },
+                  "id": 3657,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "typeConversion",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "259:55:3",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes20",
+                    "typeString": "bytes20"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes20",
+                    "typeString": "bytes20"
+                  }
+                ],
+                "id": 3645,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "251:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_address_$",
+                  "typeString": "type(address)"
+                },
+                "typeName": {
+                  "id": 3644,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "251:7:3",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 3658,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "251:64:3",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": true,
+            "functionSelector": "3a768463",
+            "id": 3665,
+            "mutability": "constant",
+            "name": "vm",
+            "nameLocation": "341:2:3",
+            "nodeType": "VariableDeclaration",
+            "scope": 3666,
+            "src": "322:38:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Vm_$6613",
+              "typeString": "contract Vm"
+            },
+            "typeName": {
+              "id": 3661,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3660,
+                "name": "Vm",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 6613,
+                "src": "322:2:3"
+              },
+              "referencedDeclaration": 6613,
+              "src": "322:2:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Vm_$6613",
+                "typeString": "contract Vm"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "id": 3663,
+                  "name": "VM_ADDRESS",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 3659,
+                  "src": "349:10:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                ],
+                "id": 3662,
+                "name": "Vm",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 6613,
+                "src": "346:2:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Vm_$6613_$",
+                  "typeString": "type(contract Vm)"
+                }
+              },
+              "id": 3664,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "346:14:3",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Vm_$6613",
+                "typeString": "contract Vm"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 3667,
+        "src": "140:223:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "38:326:3"
+  }
+}
