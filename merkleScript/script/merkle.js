@@ -16,7 +16,9 @@ console.log(merkletree.toString());
 let root = merkletree.getHexRoot().toString("hex");
 console.log("root is :", root);
 
-let whitelist1 = keccak256(leaves[0]);
+let address1 = leaves[0];
+
+let whitelist1 = keccak256(address1);
 
 let proof = merkletree.getHexProof(whitelist1);
 console.log("the proof for whitelist 1 is:", proof);
