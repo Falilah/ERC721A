@@ -1,67 +1,52 @@
 {
   "abi": [],
   "bytecode": {
-    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122017123892a379b171ec7d41c40c561b733a5aa0e04303c45a93be9da595b08d7564736f6c634300080a0033",
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206dcf69d1b7363ced3761ff9f413dc7c674e0f86909cddc8075102643d466412664736f6c634300080a0033",
     "sourceMap": "146:2235:12:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;146:2235:12;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122017123892a379b171ec7d41c40c561b733a5aa0e04303c45a93be9da595b08d7564736f6c634300080a0033",
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206dcf69d1b7363ced3761ff9f413dc7c674e0f86909cddc8075102643d466412664736f6c634300080a0033",
     "sourceMap": "146:2235:12:-:0;;;;;;;;",
     "linkReferences": {}
   },
+  "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/home/iwura/Documents/Dreamers/lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+    "absolutePath": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+    "id": 23251,
     "exportedSymbols": {
       "Strings": [
         23250
       ]
     },
-    "id": 23251,
-    "license": "MIT",
     "nodeType": "SourceUnit",
+    "src": "86:2296:12",
     "nodes": [
       {
         "id": 23026,
+        "nodeType": "PragmaDirective",
+        "src": "86:23:12",
         "literals": [
           "solidity",
           "^",
           "0.8",
           ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "86:23:12"
+        ]
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "canonicalName": "Strings",
-        "contractDependencies": [],
-        "contractKind": "library",
-        "documentation": {
-          "id": 23027,
-          "nodeType": "StructuredDocumentation",
-          "src": "111:34:12",
-          "text": " @dev String operations."
-        },
-        "fullyImplemented": true,
         "id": 23250,
-        "linearizedBaseContracts": [
-          23250
-        ],
-        "name": "Strings",
-        "nameLocation": "154:7:12",
         "nodeType": "ContractDefinition",
+        "src": "146:2235:12",
         "nodes": [
           {
-            "constant": true,
             "id": 23030,
+            "nodeType": "VariableDeclaration",
+            "src": "168:58:12",
+            "constant": true,
             "mutability": "constant",
             "name": "_HEX_SYMBOLS",
             "nameLocation": "193:12:12",
-            "nodeType": "VariableDeclaration",
             "scope": 23250,
-            "src": "168:58:12",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -97,14 +82,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 23033,
+            "nodeType": "VariableDeclaration",
+            "src": "232:43:12",
+            "constant": true,
             "mutability": "constant",
             "name": "_ADDRESS_LENGTH",
             "nameLocation": "255:15:12",
-            "nodeType": "VariableDeclaration",
             "scope": 23250,
-            "src": "232:43:12",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -140,6 +125,9 @@
             "visibility": "private"
           },
           {
+            "id": 23112,
+            "nodeType": "FunctionDefinition",
+            "src": "377:703:12",
             "body": {
               "id": 23111,
               "nodeType": "Block",
@@ -1034,13 +1022,11 @@
               "src": "282:90:12",
               "text": " @dev Converts a `uint256` to its ASCII `string` decimal representation."
             },
-            "id": 23112,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toString",
             "nameLocation": "386:8:12",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 23037,
               "nodeType": "ParameterList",
@@ -1110,12 +1096,14 @@
               "src": "432:15:12"
             },
             "scope": 23250,
-            "src": "377:703:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 23153,
+            "nodeType": "FunctionDefinition",
+            "src": "1185:329:12",
             "body": {
               "id": 23152,
               "nodeType": "Block",
@@ -1522,13 +1510,11 @@
               "src": "1086:94:12",
               "text": " @dev Converts a `uint256` to its ASCII `string` hexadecimal representation."
             },
-            "id": 23153,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toHexString",
             "nameLocation": "1194:11:12",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 23116,
               "nodeType": "ParameterList",
@@ -1598,12 +1584,14 @@
               "src": "1243:15:12"
             },
             "scope": 23250,
-            "src": "1185:329:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 23229,
+            "nodeType": "FunctionDefinition",
+            "src": "1637:441:12",
             "body": {
               "id": 23228,
               "nodeType": "Block",
@@ -2486,13 +2474,11 @@
               "src": "1520:112:12",
               "text": " @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length."
             },
-            "id": 23229,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toHexString",
             "nameLocation": "1646:11:12",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 23159,
               "nodeType": "ParameterList",
@@ -2589,12 +2575,14 @@
               "src": "1711:15:12"
             },
             "scope": 23250,
-            "src": "1637:441:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 23249,
+            "nodeType": "FunctionDefinition",
+            "src": "2230:149:12",
             "body": {
               "id": 23248,
               "nodeType": "Block",
@@ -2770,13 +2758,11 @@
               "src": "2084:141:12",
               "text": " @dev Converts an `address` with fixed length of 20 bytes to its not checksummed ASCII `string` hexadecimal representation."
             },
-            "id": 23249,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toHexString",
             "nameLocation": "2239:11:12",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 23233,
               "nodeType": "ParameterList",
@@ -2847,17 +2833,33 @@
               "src": "2287:15:12"
             },
             "scope": 23250,
-            "src": "2230:149:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Strings",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 23027,
+          "nodeType": "StructuredDocumentation",
+          "src": "111:34:12",
+          "text": " @dev String operations."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          23250
+        ],
+        "name": "Strings",
+        "nameLocation": "154:7:12",
         "scope": 23251,
-        "src": "146:2235:12",
         "usedErrors": []
       }
     ],
-    "src": "86:2296:12"
-  }
+    "license": "MIT"
+  },
+  "id": 12
 }

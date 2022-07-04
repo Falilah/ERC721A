@@ -16,17 +16,22 @@
     }
   ],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
+    "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea2646970667358221220b9f69365b7faabf203dcac30b2f62a9379dde668cd970f19775673937a5cce8064736f6c634300080a0033",
     "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea26469706673582212206d9bbbc710bf242ab398aab0cf569ea7217bed676b6aa5088d573875856af4dd64736f6c634300080a0033",
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea2646970667358221220b9f69365b7faabf203dcac30b2f62a9379dde668cd970f19775673937a5cce8064736f6c634300080a0033",
     "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "setUp()": "0a9254e4",
+    "testExample()": "3f5a4a2a"
+  },
   "ast": {
-    "absolutePath": "/home/iwura/Documents/Dreamers/src/test/Contract.t.sol",
+    "absolutePath": "src/test/Contract.t.sol",
+    "id": 24750,
     "exportedSymbols": {
       "ContractTest": [
         24749
@@ -35,48 +40,40 @@
         3634
       ]
     },
-    "id": 24750,
-    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
+    "src": "39:182:17",
     "nodes": [
       {
         "id": 24739,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:17",
         "literals": [
           "solidity",
           "0.8",
           ".10"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "39:23:17"
+        ]
       },
       {
-        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/lib/ds-test/src/test.sol",
-        "file": "ds-test/test.sol",
         "id": 24740,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
+        "src": "64:26:17",
+        "absolutePath": "lib/ds-test/src/test.sol",
+        "file": "ds-test/test.sol",
+        "nameLocation": "-1:-1:-1",
         "scope": 24750,
         "sourceUnit": 3635,
-        "src": "64:26:17",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "canonicalName": "ContractTest",
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "fullyImplemented": true,
         "id": 24749,
-        "linearizedBaseContracts": [
-          24749
-        ],
-        "name": "ContractTest",
-        "nameLocation": "101:12:17",
         "nodeType": "ContractDefinition",
+        "src": "92:128:17",
         "nodes": [
           {
+            "id": 24744,
+            "nodeType": "FunctionDefinition",
+            "src": "120:26:17",
             "body": {
               "id": 24743,
               "nodeType": "Block",
@@ -84,13 +81,11 @@
               "statements": []
             },
             "functionSelector": "0a9254e4",
-            "id": 24744,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setUp",
             "nameLocation": "129:5:17",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 24741,
               "nodeType": "ParameterList",
@@ -104,12 +99,14 @@
               "src": "144:0:17"
             },
             "scope": 24749,
-            "src": "120:26:17",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
+            "id": 24748,
+            "nodeType": "FunctionDefinition",
+            "src": "152:66:17",
             "body": {
               "id": 24747,
               "nodeType": "Block",
@@ -117,13 +114,11 @@
               "statements": []
             },
             "functionSelector": "3f5a4a2a",
-            "id": 24748,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "testExample",
             "nameLocation": "161:11:17",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 24745,
               "nodeType": "ParameterList",
@@ -137,17 +132,27 @@
               "src": "182:0:17"
             },
             "scope": 24749,
-            "src": "152:66:17",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ContractTest",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24749
+        ],
+        "name": "ContractTest",
+        "nameLocation": "101:12:17",
         "scope": 24750,
-        "src": "92:128:17",
         "usedErrors": []
       }
     ],
-    "src": "39:182:17"
-  }
+    "license": "UNLICENSED"
+  },
+  "id": 17
 }

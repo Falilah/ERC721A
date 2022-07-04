@@ -45,8 +45,12 @@
     "sourceMap": "",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "onERC721Received(address,address,uint256,bytes)": "150b7a02"
+  },
   "ast": {
-    "absolutePath": "/home/iwura/Documents/Dreamers/lib/ERC721A/contracts/ERC721A.sol",
+    "absolutePath": "lib/ERC721A/contracts/ERC721A.sol",
+    "id": 1639,
     "exportedSymbols": {
       "ERC721A": [
         1638
@@ -58,63 +62,47 @@
         1847
       ]
     },
-    "id": 1639,
-    "license": "MIT",
     "nodeType": "SourceUnit",
+    "src": "84:34917:0",
     "nodes": [
       {
         "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "84:23:0",
         "literals": [
           "solidity",
           "^",
           "0.8",
           ".4"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "84:23:0"
+        ]
       },
       {
-        "absolutePath": "/home/iwura/Documents/Dreamers/lib/ERC721A/contracts/IERC721A.sol",
-        "file": "./IERC721A.sol",
         "id": 2,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
+        "src": "109:24:0",
+        "absolutePath": "lib/ERC721A/contracts/IERC721A.sol",
+        "file": "./IERC721A.sol",
+        "nameLocation": "-1:-1:-1",
         "scope": 1639,
         "sourceUnit": 1848,
-        "src": "109:24:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "canonicalName": "ERC721A__IERC721Receiver",
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "documentation": {
-          "id": 3,
-          "nodeType": "StructuredDocumentation",
-          "src": "135:48:0",
-          "text": " @dev ERC721 token receiver interface."
-        },
-        "fullyImplemented": false,
         "id": 17,
-        "linearizedBaseContracts": [
-          17
-        ],
-        "name": "ERC721A__IERC721Receiver",
-        "nameLocation": "194:24:0",
         "nodeType": "ContractDefinition",
+        "src": "184:203:0",
         "nodes": [
           {
-            "functionSelector": "150b7a02",
             "id": 16,
+            "nodeType": "FunctionDefinition",
+            "src": "225:160:0",
+            "functionSelector": "150b7a02",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "onERC721Received",
             "nameLocation": "234:16:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 12,
               "nodeType": "ParameterList",
@@ -267,60 +255,45 @@
               "src": "376:8:0"
             },
             "scope": 17,
-            "src": "225:160:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ERC721A__IERC721Receiver",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 3,
+          "nodeType": "StructuredDocumentation",
+          "src": "135:48:0",
+          "text": " @dev ERC721 token receiver interface."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          17
+        ],
+        "name": "ERC721A__IERC721Receiver",
+        "nameLocation": "194:24:0",
         "scope": 1639,
-        "src": "184:203:0",
         "usedErrors": []
       },
       {
-        "abstract": false,
-        "baseContracts": [
-          {
-            "baseName": {
-              "id": 19,
-              "name": "IERC721A",
-              "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1847,
-              "src": "905:8:0"
-            },
-            "id": 20,
-            "nodeType": "InheritanceSpecifier",
-            "src": "905:8:0"
-          }
-        ],
-        "canonicalName": "ERC721A",
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": {
-          "id": 18,
-          "nodeType": "StructuredDocumentation",
-          "src": "389:495:0",
-          "text": " @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard,\n including the Metadata extension. Built to optimize for lower gas during batch mints.\n Assumes serials are sequentially minted starting at `_startTokenId()`\n (defaults to 0, e.g. 0, 1, 2, 3..).\n Assumes that an owner cannot have more than 2**64 - 1 (max value of uint64) of supply.\n Assumes that the maximum token id cannot exceed 2**256 - 1 (max value of uint256)."
-        },
-        "fullyImplemented": true,
         "id": 1638,
-        "linearizedBaseContracts": [
-          1638,
-          1847
-        ],
-        "name": "ERC721A",
-        "nameLocation": "894:7:0",
         "nodeType": "ContractDefinition",
+        "src": "885:34115:0",
         "nodes": [
           {
-            "constant": true,
             "id": 28,
+            "nodeType": "VariableDeclaration",
+            "src": "968:67:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_ADDRESS_DATA_ENTRY",
             "nameLocation": "993:26:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "968:67:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -440,14 +413,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 31,
+            "nodeType": "VariableDeclaration",
+            "src": "1108:50:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_NUMBER_MINTED",
             "nameLocation": "1133:20:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1108:50:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -483,14 +456,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 34,
+            "nodeType": "VariableDeclaration",
+            "src": "1231:51:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_NUMBER_BURNED",
             "nameLocation": "1256:20:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1231:51:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -526,14 +499,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 37,
+            "nodeType": "VariableDeclaration",
+            "src": "1346:41:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_AUX",
             "nameLocation": "1371:10:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1346:41:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -569,14 +542,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 45,
+            "nodeType": "VariableDeclaration",
+            "src": "1475:64:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_AUX_COMPLEMENT",
             "nameLocation": "1500:22:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1475:64:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -696,14 +669,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 48,
+            "nodeType": "VariableDeclaration",
+            "src": "1611:53:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_START_TIMESTAMP",
             "nameLocation": "1636:22:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1611:53:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -739,14 +712,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 53,
+            "nodeType": "VariableDeclaration",
+            "src": "1732:50:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_BURNED",
             "nameLocation": "1757:14:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1732:50:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -816,14 +789,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 56,
+            "nodeType": "VariableDeclaration",
+            "src": "1863:54:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_NEXT_INITIALIZED",
             "nameLocation": "1888:23:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1863:54:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -859,14 +832,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 61,
+            "nodeType": "VariableDeclaration",
+            "src": "1994:60:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_NEXT_INITIALIZED",
             "nameLocation": "2019:24:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "1994:60:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -936,14 +909,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 64,
+            "nodeType": "VariableDeclaration",
+            "src": "2121:48:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITPOS_EXTRA_DATA",
             "nameLocation": "2146:17:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2121:48:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -979,14 +952,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 72,
+            "nodeType": "VariableDeclaration",
+            "src": "2262:71:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_EXTRA_DATA_COMPLEMENT",
             "nameLocation": "2287:29:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2262:71:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1106,14 +1079,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 80,
+            "nodeType": "VariableDeclaration",
+            "src": "2393:57:0",
+            "constant": true,
             "mutability": "constant",
             "name": "BITMASK_ADDRESS",
             "nameLocation": "2418:15:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2393:57:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1233,14 +1206,14 @@
             "visibility": "private"
           },
           {
-            "constant": true,
             "id": 83,
+            "nodeType": "VariableDeclaration",
+            "src": "2733:63:0",
+            "constant": true,
             "mutability": "constant",
             "name": "MAX_MINT_ERC2309_QUANTITY_LIMIT",
             "nameLocation": "2758:31:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2733:63:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1276,14 +1249,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 85,
+            "nodeType": "VariableDeclaration",
+            "src": "2854:29:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_currentIndex",
             "nameLocation": "2870:13:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2854:29:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1303,14 +1276,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 87,
+            "nodeType": "VariableDeclaration",
+            "src": "2926:28:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_burnCounter",
             "nameLocation": "2942:12:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2926:28:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1330,14 +1303,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 89,
+            "nodeType": "VariableDeclaration",
+            "src": "2979:20:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_name",
             "nameLocation": "2994:5:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "2979:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1357,14 +1330,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 91,
+            "nodeType": "VariableDeclaration",
+            "src": "3026:22:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_symbol",
             "nameLocation": "3041:7:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "3026:22:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1384,14 +1357,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 95,
+            "nodeType": "VariableDeclaration",
+            "src": "3432:53:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_packedOwnerships",
             "nameLocation": "3468:17:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "3432:53:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1430,14 +1403,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 99,
+            "nodeType": "VariableDeclaration",
+            "src": "3691:54:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_packedAddressData",
             "nameLocation": "3727:18:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "3691:54:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1476,14 +1449,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 103,
+            "nodeType": "VariableDeclaration",
+            "src": "3802:51:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_tokenApprovals",
             "nameLocation": "3838:15:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "3802:51:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1523,14 +1496,14 @@
             "visibility": "private"
           },
           {
-            "constant": false,
             "id": 109,
+            "nodeType": "VariableDeclaration",
+            "src": "3908:71:0",
+            "constant": false,
             "mutability": "mutable",
             "name": "_operatorApprovals",
             "nameLocation": "3961:18:0",
-            "nodeType": "VariableDeclaration",
             "scope": 1638,
-            "src": "3908:71:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1588,6 +1561,9 @@
             "visibility": "private"
           },
           {
+            "id": 130,
+            "nodeType": "FunctionDefinition",
+            "src": "3986:154:0",
             "body": {
               "id": 129,
               "nodeType": "Block",
@@ -1742,13 +1718,11 @@
                 }
               ]
             },
-            "id": 130,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nameLocation": "-1:-1:-1",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 114,
               "nodeType": "ParameterList",
@@ -1817,12 +1791,14 @@
               "src": "4042:0:0"
             },
             "scope": 1638,
-            "src": "3986:154:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
+            "id": 139,
+            "nodeType": "FunctionDefinition",
+            "src": "4276:90:0",
             "body": {
               "id": 138,
               "nodeType": "Block",
@@ -1858,13 +1834,11 @@
               "src": "4146:125:0",
               "text": " @dev Returns the starting token ID.\n To change the starting token ID, please override this function."
             },
-            "id": 139,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_startTokenId",
             "nameLocation": "4285:13:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 132,
               "nodeType": "ParameterList",
@@ -1906,12 +1880,14 @@
               "src": "4331:9:0"
             },
             "scope": 1638,
-            "src": "4276:90:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 148,
+            "nodeType": "FunctionDefinition",
+            "src": "4440:93:0",
             "body": {
               "id": 147,
               "nodeType": "Block",
@@ -1943,13 +1919,11 @@
               "src": "4372:63:0",
               "text": " @dev Returns the next token ID to be minted."
             },
-            "id": 148,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_nextTokenId",
             "nameLocation": "4449:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 141,
               "nodeType": "ParameterList",
@@ -1991,15 +1965,14 @@
               "src": "4486:9:0"
             },
             "scope": 1638,
-            "src": "4440:93:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "baseFunctions": [
-              1698
-            ],
+            "id": 164,
+            "nodeType": "FunctionDefinition",
+            "src": "4736:309:0",
             "body": {
               "id": 163,
               "nodeType": "Block",
@@ -2110,6 +2083,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1698
+            ],
             "documentation": {
               "id": 149,
               "nodeType": "StructuredDocumentation",
@@ -2117,13 +2093,11 @@
               "text": " @dev Returns the total number of tokens in existence.\n Burned tokens will reduce the count.\n To get the total number of tokens minted, please see `_totalMinted`."
             },
             "functionSelector": "18160ddd",
-            "id": 164,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "totalSupply",
             "nameLocation": "4745:11:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 151,
               "nodeType": "OverrideSpecifier",
@@ -2171,12 +2145,14 @@
               "src": "4788:9:0"
             },
             "scope": 1638,
-            "src": "4736:309:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
+            "id": 177,
+            "nodeType": "FunctionDefinition",
+            "src": "5138:279:0",
             "body": {
               "id": 176,
               "nodeType": "Block",
@@ -2263,13 +2239,11 @@
               "src": "5051:82:0",
               "text": " @dev Returns the total amount of tokens minted in the contract."
             },
-            "id": 177,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_totalMinted",
             "nameLocation": "5147:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 166,
               "nodeType": "ParameterList",
@@ -2311,12 +2285,14 @@
               "src": "5184:9:0"
             },
             "scope": 1638,
-            "src": "5138:279:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 186,
+            "nodeType": "FunctionDefinition",
+            "src": "5494:92:0",
             "body": {
               "id": 185,
               "nodeType": "Block",
@@ -2348,13 +2324,11 @@
               "src": "5423:66:0",
               "text": " @dev Returns the total number of tokens burned."
             },
-            "id": 186,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_totalBurned",
             "nameLocation": "5503:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 179,
               "nodeType": "ParameterList",
@@ -2396,15 +2370,14 @@
               "src": "5540:9:0"
             },
             "scope": 1638,
-            "src": "5494:92:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "baseFunctions": [
-              1706
-            ],
+            "id": 208,
+            "nodeType": "FunctionDefinition",
+            "src": "5653:607:0",
             "body": {
               "id": 207,
               "nodeType": "Block",
@@ -2592,6 +2565,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1706
+            ],
             "documentation": {
               "id": 187,
               "nodeType": "StructuredDocumentation",
@@ -2599,13 +2575,11 @@
               "text": " @dev See {IERC165-supportsInterface}."
             },
             "functionSelector": "01ffc9a7",
-            "id": 208,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "supportsInterface",
             "nameLocation": "5662:17:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 191,
               "nodeType": "OverrideSpecifier",
@@ -2681,15 +2655,14 @@
               "src": "5737:6:0"
             },
             "scope": 1638,
-            "src": "5653:607:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1741
-            ],
+            "id": 234,
+            "nodeType": "FunctionDefinition",
+            "src": "6319:221:0",
             "body": {
               "id": 233,
               "nodeType": "Block",
@@ -2900,6 +2873,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1741
+            ],
             "documentation": {
               "id": 209,
               "nodeType": "StructuredDocumentation",
@@ -2907,13 +2883,11 @@
               "text": " @dev See {IERC721-balanceOf}."
             },
             "functionSelector": "70a08231",
-            "id": 234,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "balanceOf",
             "nameLocation": "6328:9:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 213,
               "nodeType": "OverrideSpecifier",
@@ -2990,12 +2964,14 @@
               "src": "6382:9:0"
             },
             "scope": 1638,
-            "src": "6319:221:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
+            "id": 252,
+            "nodeType": "FunctionDefinition",
+            "src": "6617:174:0",
             "body": {
               "id": 251,
               "nodeType": "Block",
@@ -3128,13 +3104,11 @@
               "src": "6546:66:0",
               "text": " Returns the number of tokens minted by `owner`."
             },
-            "id": 252,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_numberMinted",
             "nameLocation": "6626:13:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 238,
               "nodeType": "ParameterList",
@@ -3205,12 +3179,14 @@
               "src": "6677:9:0"
             },
             "scope": 1638,
-            "src": "6617:174:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 270,
+            "nodeType": "FunctionDefinition",
+            "src": "6884:174:0",
             "body": {
               "id": 269,
               "nodeType": "Block",
@@ -3343,13 +3319,11 @@
               "src": "6797:82:0",
               "text": " Returns the number of tokens burned by or on behalf of `owner`."
             },
-            "id": 270,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_numberBurned",
             "nameLocation": "6893:13:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 256,
               "nodeType": "ParameterList",
@@ -3420,12 +3394,14 @@
               "src": "6944:9:0"
             },
             "scope": 1638,
-            "src": "6884:174:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 288,
+            "nodeType": "FunctionDefinition",
+            "src": "7171:134:0",
             "body": {
               "id": 287,
               "nodeType": "Block",
@@ -3556,13 +3532,11 @@
               "src": "7064:102:0",
               "text": " Returns the auxiliary data for `owner`. (e.g. number of whitelist mint slots used)."
             },
-            "id": 288,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_getAux",
             "nameLocation": "7180:7:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 274,
               "nodeType": "ParameterList",
@@ -3633,12 +3607,14 @@
               "src": "7225:8:0"
             },
             "scope": 1638,
-            "src": "7171:134:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 325,
+            "nodeType": "FunctionDefinition",
+            "src": "7487:385:0",
             "body": {
               "id": 324,
               "nodeType": "Block",
@@ -4040,13 +4016,11 @@
               "src": "7311:171:0",
               "text": " Sets the auxiliary data for `owner`. (e.g. number of whitelist mint slots used).\n If there are multiple variables, please pack them into a uint64."
             },
-            "id": 325,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_setAux",
             "nameLocation": "7496:7:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 294,
               "nodeType": "ParameterList",
@@ -4116,12 +4090,14 @@
               "src": "7540:0:0"
             },
             "scope": 1638,
-            "src": "7487:385:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 379,
+            "nodeType": "FunctionDefinition",
+            "src": "7949:1105:0",
             "body": {
               "id": 378,
               "nodeType": "Block",
@@ -4666,13 +4642,11 @@
               "src": "7878:66:0",
               "text": " Returns the packed ownership data of `tokenId`."
             },
-            "id": 379,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_packedOwnershipOf",
             "nameLocation": "7958:18:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 329,
               "nodeType": "ParameterList",
@@ -4742,12 +4716,14 @@
               "src": "8015:9:0"
             },
             "scope": 1638,
-            "src": "7949:1105:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           },
           {
+            "id": 433,
+            "nodeType": "FunctionDefinition",
+            "src": "9143:358:0",
             "body": {
               "id": 432,
               "nodeType": "Block",
@@ -5293,13 +5269,11 @@
               "src": "9060:78:0",
               "text": " Returns the unpacked `TokenOwnership` struct from `packed`."
             },
-            "id": 433,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_unpackedOwnership",
             "nameLocation": "9152:18:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 383,
               "nodeType": "ParameterList",
@@ -5376,12 +5350,14 @@
               "src": "9208:33:0"
             },
             "scope": 1638,
-            "src": "9143:358:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "private"
           },
           {
+            "id": 449,
+            "nodeType": "FunctionDefinition",
+            "src": "9587:151:0",
             "body": {
               "id": 448,
               "nodeType": "Block",
@@ -5474,13 +5450,11 @@
               "src": "9507:75:0",
               "text": " Returns the unpacked `TokenOwnership` struct at `index`."
             },
-            "id": 449,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_ownershipAt",
             "nameLocation": "9596:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 437,
               "nodeType": "ParameterList",
@@ -5557,12 +5531,14 @@
               "src": "9646:23:0"
             },
             "scope": 1638,
-            "src": "9587:151:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 471,
+            "nodeType": "FunctionDefinition",
+            "src": "9846:184:0",
             "body": {
               "id": 470,
               "nodeType": "Block",
@@ -5763,13 +5739,11 @@
               "src": "9744:97:0",
               "text": " @dev Initializes the ownership slot minted at `index` for efficiency purposes."
             },
-            "id": 471,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_initializeOwnershipAt",
             "nameLocation": "9855:22:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 453,
               "nodeType": "ParameterList",
@@ -5811,12 +5785,14 @@
               "src": "9902:0:0"
             },
             "scope": 1638,
-            "src": "9846:184:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 487,
+            "nodeType": "FunctionDefinition",
+            "src": "10226:156:0",
             "body": {
               "id": 486,
               "nodeType": "Block",
@@ -5920,13 +5896,11 @@
               "src": "10036:185:0",
               "text": " Gas spent here starts off proportional to the maximum mint batch size.\n It gradually moves to O(1) as tokens get transferred around in the collection over time."
             },
-            "id": 487,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_ownershipOf",
             "nameLocation": "10235:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 475,
               "nodeType": "ParameterList",
@@ -6003,12 +5977,14 @@
               "src": "10287:23:0"
             },
             "scope": 1638,
-            "src": "10226:156:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 499,
+            "nodeType": "FunctionDefinition",
+            "src": "10460:440:0",
             "body": {
               "id": 498,
               "nodeType": "Block",
@@ -6186,13 +6162,11 @@
               "src": "10388:67:0",
               "text": " @dev Packs ownership data into a single uint256."
             },
-            "id": 499,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_packOwnershipData",
             "nameLocation": "10469:18:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 493,
               "nodeType": "ParameterList",
@@ -6290,15 +6264,14 @@
               "src": "10539:16:0"
             },
             "scope": 1638,
-            "src": "10460:440:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           },
           {
-            "baseFunctions": [
-              1749
-            ],
+            "id": 519,
+            "nodeType": "FunctionDefinition",
+            "src": "10957:142:0",
             "body": {
               "id": 518,
               "nodeType": "Block",
@@ -6448,6 +6421,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1749
+            ],
             "documentation": {
               "id": 500,
               "nodeType": "StructuredDocumentation",
@@ -6455,13 +6431,11 @@
               "text": " @dev See {IERC721-ownerOf}."
             },
             "functionSelector": "6352211e",
-            "id": 519,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "ownerOf",
             "nameLocation": "10966:7:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 504,
               "nodeType": "OverrideSpecifier",
@@ -6538,15 +6512,14 @@
               "src": "11020:9:0"
             },
             "scope": 1638,
-            "src": "10957:142:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1821
-            ],
+            "id": 529,
+            "nodeType": "FunctionDefinition",
+            "src": "11161:98:0",
             "body": {
               "id": 528,
               "nodeType": "Block",
@@ -6572,6 +6545,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1821
+            ],
             "documentation": {
               "id": 520,
               "nodeType": "StructuredDocumentation",
@@ -6579,13 +6555,11 @@
               "text": " @dev See {IERC721Metadata-name}."
             },
             "functionSelector": "06fdde03",
-            "id": 529,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "name",
             "nameLocation": "11170:4:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 522,
               "nodeType": "OverrideSpecifier",
@@ -6633,15 +6607,14 @@
               "src": "11214:15:0"
             },
             "scope": 1638,
-            "src": "11161:98:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1827
-            ],
+            "id": 539,
+            "nodeType": "FunctionDefinition",
+            "src": "11323:102:0",
             "body": {
               "id": 538,
               "nodeType": "Block",
@@ -6667,6 +6640,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1827
+            ],
             "documentation": {
               "id": 530,
               "nodeType": "StructuredDocumentation",
@@ -6674,13 +6650,11 @@
               "text": " @dev See {IERC721Metadata-symbol}."
             },
             "functionSelector": "95d89b41",
-            "id": 539,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "symbol",
             "nameLocation": "11332:6:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 532,
               "nodeType": "OverrideSpecifier",
@@ -6728,15 +6702,14 @@
               "src": "11378:15:0"
             },
             "scope": 1638,
-            "src": "11323:102:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1835
-            ],
+            "id": 582,
+            "nodeType": "FunctionDefinition",
+            "src": "11491:313:0",
             "body": {
               "id": 581,
               "nodeType": "Block",
@@ -7211,6 +7184,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1835
+            ],
             "documentation": {
               "id": 540,
               "nodeType": "StructuredDocumentation",
@@ -7218,13 +7194,11 @@
               "text": " @dev See {IERC721Metadata-tokenURI}."
             },
             "functionSelector": "c87b56dd",
-            "id": 582,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "tokenURI",
             "nameLocation": "11500:8:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 544,
               "nodeType": "OverrideSpecifier",
@@ -7300,12 +7274,14 @@
               "src": "11563:15:0"
             },
             "scope": 1638,
-            "src": "11491:313:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
+            "id": 591,
+            "nodeType": "FunctionDefinition",
+            "src": "12049:92:0",
             "body": {
               "id": 590,
               "nodeType": "Block",
@@ -7341,13 +7317,11 @@
               "src": "11810:234:0",
               "text": " @dev Base URI for computing {tokenURI}. If set, the resulting URI for each\n token will be the concatenation of the `baseURI` and the `tokenId`. Empty\n by default, it can be overridden in child contracts."
             },
-            "id": 591,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_baseURI",
             "nameLocation": "12058:8:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 584,
               "nodeType": "ParameterList",
@@ -7389,12 +7363,14 @@
               "src": "12099:15:0"
             },
             "scope": 1638,
-            "src": "12049:92:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 601,
+            "nodeType": "FunctionDefinition",
+            "src": "12238:316:0",
             "body": {
               "id": 600,
               "nodeType": "Block",
@@ -7493,13 +7469,11 @@
               "src": "12147:86:0",
               "text": " @dev Returns the `nextInitialized` flag set if `quantity` equals 1."
             },
-            "id": 601,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_nextInitializedFlag",
             "nameLocation": "12247:20:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 595,
               "nodeType": "ParameterList",
@@ -7569,15 +7543,14 @@
               "src": "12307:16:0"
             },
             "scope": 1638,
-            "src": "12238:316:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "private"
           },
           {
-            "baseFunctions": [
-              1789
-            ],
+            "id": 645,
+            "nodeType": "FunctionDefinition",
+            "src": "12611:376:0",
             "body": {
               "id": 644,
               "nodeType": "Block",
@@ -8033,6 +8006,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1789
+            ],
             "documentation": {
               "id": 602,
               "nodeType": "StructuredDocumentation",
@@ -8040,13 +8016,11 @@
               "text": " @dev See {IERC721-approve}."
             },
             "functionSelector": "095ea7b3",
-            "id": 645,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "approve",
             "nameLocation": "12620:7:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 608,
               "nodeType": "OverrideSpecifier",
@@ -8122,15 +8096,14 @@
               "src": "12673:0:0"
             },
             "scope": 1638,
-            "src": "12611:376:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1805
-            ],
+            "id": 667,
+            "nodeType": "FunctionDefinition",
+            "src": "13048:200:0",
             "body": {
               "id": 666,
               "nodeType": "Block",
@@ -8284,6 +8257,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1805
+            ],
             "documentation": {
               "id": 646,
               "nodeType": "StructuredDocumentation",
@@ -8291,13 +8267,11 @@
               "text": " @dev See {IERC721-getApproved}."
             },
             "functionSelector": "081812fc",
-            "id": 667,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getApproved",
             "nameLocation": "13057:11:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 650,
               "nodeType": "OverrideSpecifier",
@@ -8374,15 +8348,14 @@
               "src": "13115:9:0"
             },
             "scope": 1638,
-            "src": "13048:200:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1797
-            ],
+            "id": 701,
+            "nodeType": "FunctionDefinition",
+            "src": "13315:303:0",
             "body": {
               "id": 700,
               "nodeType": "Block",
@@ -8704,6 +8677,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1797
+            ],
             "documentation": {
               "id": 668,
               "nodeType": "StructuredDocumentation",
@@ -8711,13 +8687,11 @@
               "text": " @dev See {IERC721-setApprovalForAll}."
             },
             "functionSelector": "a22cb465",
-            "id": 701,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setApprovalForAll",
             "nameLocation": "13324:17:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 674,
               "nodeType": "OverrideSpecifier",
@@ -8793,15 +8767,14 @@
               "src": "13399:0:0"
             },
             "scope": 1638,
-            "src": "13315:303:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1815
-            ],
+            "id": 719,
+            "nodeType": "FunctionDefinition",
+            "src": "13684:162:0",
             "body": {
               "id": 718,
               "nodeType": "Block",
@@ -8877,6 +8850,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1815
+            ],
             "documentation": {
               "id": 702,
               "nodeType": "StructuredDocumentation",
@@ -8884,13 +8860,11 @@
               "text": " @dev See {IERC721-isApprovedForAll}."
             },
             "functionSelector": "e985e9c5",
-            "id": 719,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isApprovedForAll",
             "nameLocation": "13693:16:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 708,
               "nodeType": "OverrideSpecifier",
@@ -8995,15 +8969,14 @@
               "src": "13780:6:0"
             },
             "scope": 1638,
-            "src": "13684:162:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1771
-            ],
+            "id": 738,
+            "nodeType": "FunctionDefinition",
+            "src": "13912:179:0",
             "body": {
               "id": 737,
               "nodeType": "Block",
@@ -9119,6 +9092,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1771
+            ],
             "documentation": {
               "id": 720,
               "nodeType": "StructuredDocumentation",
@@ -9126,13 +9102,11 @@
               "text": " @dev See {IERC721-safeTransferFrom}."
             },
             "functionSelector": "42842e0e",
-            "id": 738,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "safeTransferFrom",
             "nameLocation": "13921:16:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 728,
               "nodeType": "OverrideSpecifier",
@@ -9236,15 +9210,14 @@
               "src": "14035:0:0"
             },
             "scope": 1638,
-            "src": "13912:179:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              1761
-            ],
+            "id": 776,
+            "nodeType": "FunctionDefinition",
+            "src": "14157:388:0",
             "body": {
               "id": 775,
               "nodeType": "Block",
@@ -9574,6 +9547,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1761
+            ],
             "documentation": {
               "id": 739,
               "nodeType": "StructuredDocumentation",
@@ -9581,13 +9557,11 @@
               "text": " @dev See {IERC721-safeTransferFrom}."
             },
             "functionSelector": "b88d4fde",
-            "id": 776,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "safeTransferFrom",
             "nameLocation": "14166:16:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 749,
               "nodeType": "OverrideSpecifier",
@@ -9718,12 +9692,14 @@
               "src": "14308:0:0"
             },
             "scope": 1638,
-            "src": "14157:388:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           },
           {
+            "id": 802,
+            "nodeType": "FunctionDefinition",
+            "src": "14791:268:0",
             "body": {
               "id": 801,
               "nodeType": "Block",
@@ -9982,13 +9958,11 @@
               "src": "14551:235:0",
               "text": " @dev Returns whether `tokenId` exists.\n Tokens can be managed by their owner or approved accounts via {approve} or {setApprovalForAll}.\n Tokens start existing when they are minted (`_mint`),"
             },
-            "id": 802,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_exists",
             "nameLocation": "14800:7:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 780,
               "nodeType": "ParameterList",
@@ -10058,12 +10032,14 @@
               "src": "14847:6:0"
             },
             "scope": 1638,
-            "src": "14791:268:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 817,
+            "nodeType": "FunctionDefinition",
+            "src": "15138:102:0",
             "body": {
               "id": 816,
               "nodeType": "Block",
@@ -10169,13 +10145,11 @@
               "src": "15065:68:0",
               "text": " @dev Equivalent to `_safeMint(to, quantity, '')`."
             },
-            "id": 817,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_safeMint",
             "nameLocation": "15147:9:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 808,
               "nodeType": "ParameterList",
@@ -10245,12 +10219,14 @@
               "src": "15196:0:0"
             },
             "scope": 1638,
-            "src": "15138:102:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 879,
+            "nodeType": "FunctionDefinition",
+            "src": "15641:661:0",
             "body": {
               "id": 878,
               "nodeType": "Block",
@@ -10914,13 +10890,11 @@
               "src": "15246:390:0",
               "text": " @dev Safely mints `quantity` tokens and transfers them to `to`.\n Requirements:\n - If `to` refers to a smart contract, it must implement\n   {IERC721Receiver-onERC721Received}, which is called for each safe transfer.\n - `quantity` must be greater than 0.\n See {_mint}.\n Emits a {Transfer} event for each mint."
             },
-            "id": 879,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_safeMint",
             "nameLocation": "15650:9:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 825,
               "nodeType": "ParameterList",
@@ -11017,12 +10991,14 @@
               "src": "15749:0:0"
             },
             "scope": 1638,
-            "src": "15641:661:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 993,
+            "nodeType": "FunctionDefinition",
+            "src": "16563:1492:0",
             "body": {
               "id": 992,
               "nodeType": "Block",
@@ -12483,13 +12459,11 @@
               "src": "16308:250:0",
               "text": " @dev Mints `quantity` tokens and transfers them to `to`.\n Requirements:\n - `to` cannot be the zero address.\n - `quantity` must be greater than 0.\n Emits a {Transfer} event for each mint."
             },
-            "id": 993,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_mint",
             "nameLocation": "16572:5:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 885,
               "nodeType": "ParameterList",
@@ -12559,12 +12533,14 @@
               "src": "16617:0:0"
             },
             "scope": 1638,
-            "src": "16563:1492:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 1105,
+            "nodeType": "FunctionDefinition",
+            "src": "18895:1433:0",
             "body": {
               "id": 1104,
               "nodeType": "Block",
@@ -14020,13 +13996,11 @@
               "src": "18061:829:0",
               "text": " @dev Mints `quantity` tokens and transfers them to `to`.\n This function is intended for efficient minting only during contract creation.\n It emits only one {ConsecutiveTransfer} as defined in\n [ERC2309](https://eips.ethereum.org/EIPS/eip-2309),\n instead of a sequence of {Transfer} event(s).\n Calling this function outside of contract creation WILL make your contract\n non-compliant with the ERC721 standard.\n For full ERC721 compliance, substituting ERC721 {Transfer} event(s) with the ERC2309\n {ConsecutiveTransfer} event is only permissible during contract creation.\n Requirements:\n - `to` cannot be the zero address.\n - `quantity` must be greater than 0.\n Emits a {ConsecutiveTransfer} event."
             },
-            "id": 1105,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_mintERC2309",
             "nameLocation": "18904:12:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 999,
               "nodeType": "ParameterList",
@@ -14096,12 +14070,14 @@
               "src": "18956:0:0"
             },
             "scope": 1638,
-            "src": "18895:1433:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 1123,
+            "nodeType": "FunctionDefinition",
+            "src": "20436:637:0",
             "body": {
               "id": 1122,
               "nodeType": "Block",
@@ -14351,13 +14327,11 @@
               "src": "20334:97:0",
               "text": " @dev Returns the storage slot and value for the approved address of `tokenId`."
             },
-            "id": 1123,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_getApprovedAddress",
             "nameLocation": "20445:19:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1109,
               "nodeType": "ParameterList",
@@ -14455,12 +14429,14 @@
               "src": "20527:54:0"
             },
             "scope": 1638,
-            "src": "20436:637:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           },
           {
+            "id": 1137,
+            "nodeType": "FunctionDefinition",
+            "src": "21181:632:0",
             "body": {
               "id": 1136,
               "nodeType": "Block",
@@ -14693,13 +14669,11 @@
               "src": "21079:97:0",
               "text": " @dev Returns whether the `approvedAddress` is equals to `from` or `msgSender`."
             },
-            "id": 1137,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_isOwnerOrApproved",
             "nameLocation": "21190:18:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1131,
               "nodeType": "ParameterList",
@@ -14826,15 +14800,14 @@
               "src": "21318:13:0"
             },
             "scope": 1638,
-            "src": "21181:632:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "private"
           },
           {
-            "baseFunctions": [
-              1781
-            ],
+            "id": 1282,
+            "nodeType": "FunctionDefinition",
+            "src": "22055:2739:0",
             "body": {
               "id": 1281,
               "nodeType": "Block",
@@ -16676,6 +16649,9 @@
                 }
               ]
             },
+            "baseFunctions": [
+              1781
+            ],
             "documentation": {
               "id": 1138,
               "nodeType": "StructuredDocumentation",
@@ -16683,13 +16659,11 @@
               "text": " @dev Transfers `tokenId` from `from` to `to`.\n Requirements:\n - `to` cannot be the zero address.\n - `tokenId` token must be owned by `from`.\n Emits a {Transfer} event."
             },
             "functionSelector": "23b872dd",
-            "id": 1282,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "transferFrom",
             "nameLocation": "22064:12:0",
-            "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1146,
               "nodeType": "OverrideSpecifier",
@@ -16793,12 +16767,14 @@
               "src": "22174:0:0"
             },
             "scope": 1638,
-            "src": "22055:2739:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           },
           {
+            "id": 1294,
+            "nodeType": "FunctionDefinition",
+            "src": "24867:87:0",
             "body": {
               "id": 1293,
               "nodeType": "Block",
@@ -16888,13 +16864,11 @@
               "src": "24800:62:0",
               "text": " @dev Equivalent to `_burn(tokenId, false)`."
             },
-            "id": 1294,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_burn",
             "nameLocation": "24876:5:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1286,
               "nodeType": "ParameterList",
@@ -16936,12 +16910,14 @@
               "src": "24916:0:0"
             },
             "scope": 1638,
-            "src": "24867:87:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1446,
+            "nodeType": "FunctionDefinition",
+            "src": "25171:2997:0",
             "body": {
               "id": 1445,
               "nodeType": "Block",
@@ -18966,13 +18942,11 @@
               "src": "24960:206:0",
               "text": " @dev Destroys `tokenId`.\n The approval is cleared when the token is burned.\n Requirements:\n - `tokenId` must exist.\n Emits a {Transfer} event."
             },
-            "id": 1446,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_burn",
             "nameLocation": "25180:5:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1300,
               "nodeType": "ParameterList",
@@ -19041,12 +19015,14 @@
               "src": "25240:0:0"
             },
             "scope": 1638,
-            "src": "25171:2997:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1501,
+            "nodeType": "FunctionDefinition",
+            "src": "28649:697:0",
             "body": {
               "id": 1500,
               "nodeType": "Block",
@@ -19635,13 +19611,11 @@
               "src": "28174:470:0",
               "text": " @dev Internal function to invoke {IERC721Receiver-onERC721Received} on a target contract.\n @param from address representing the previous owner of the given token ID\n @param to target address that will receive the tokens\n @param tokenId uint256 ID of the token to be transferred\n @param _data bytes optional data to send along with the call\n @return bool whether the call correctly returned the expected magic value"
             },
-            "id": 1501,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_checkContractOnERC721Received",
             "nameLocation": "28658:30:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1456,
               "nodeType": "ParameterList",
@@ -19794,12 +19768,14 @@
               "src": "28806:6:0"
             },
             "scope": 1638,
-            "src": "28649:697:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "private"
           },
           {
+            "id": 1545,
+            "nodeType": "FunctionDefinition",
+            "src": "29441:512:0",
             "body": {
               "id": 1544,
               "nodeType": "Block",
@@ -20287,13 +20263,11 @@
               "src": "29352:84:0",
               "text": " @dev Directly sets the extra data for the ownership data `index`."
             },
-            "id": 1545,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_setExtraDataAt",
             "nameLocation": "29450:15:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1507,
               "nodeType": "ParameterList",
@@ -20362,12 +20336,14 @@
               "src": "29508:0:0"
             },
             "scope": 1638,
-            "src": "29441:512:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
+            "id": 1578,
+            "nodeType": "FunctionDefinition",
+            "src": "30099:302:0",
             "body": {
               "id": 1577,
               "nodeType": "Block",
@@ -20664,13 +20640,11 @@
               "src": "29959:135:0",
               "text": " @dev Returns the next extra data for the packed ownership data.\n The returned result is shifted into position."
             },
-            "id": 1578,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_nextExtraData",
             "nameLocation": "30108:14:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1553,
               "nodeType": "ParameterList",
@@ -20796,12 +20770,14 @@
               "src": "30229:9:0"
             },
             "scope": 1638,
-            "src": "30099:302:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           },
           {
+            "id": 1591,
+            "nodeType": "FunctionDefinition",
+            "src": "30961:143:0",
             "body": {
               "id": 1590,
               "nodeType": "Block",
@@ -20814,13 +20790,11 @@
               "src": "30407:549:0",
               "text": " @dev Called during each token transfer to set the 24bit `extraData` field.\n Intended to be overridden by the cosumer contract.\n `previousExtraData` - the value of `extraData` before transfer.\n Calling conditions:\n - When `from` and `to` are both non-zero, `from`'s `tokenId` will be\n transferred to `to`.\n - When `from` is zero, `tokenId` will be minted for `to`.\n - When `to` is zero, `tokenId` will be burned by `from`.\n - `from` and `to` are never both zero."
             },
-            "id": 1591,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_extraData",
             "nameLocation": "30970:10:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1586,
               "nodeType": "ParameterList",
@@ -20946,12 +20920,14 @@
               "src": "31093:8:0"
             },
             "scope": 1638,
-            "src": "30961:143:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1604,
+            "nodeType": "FunctionDefinition",
+            "src": "31742:154:0",
             "body": {
               "id": 1603,
               "nodeType": "Block",
@@ -20964,13 +20940,11 @@
               "src": "31110:627:0",
               "text": " @dev Hook that is called before a set of serially-ordered token ids are about to be transferred.\n This includes minting.\n And also called before burning one token.\n startTokenId - the first token id to be transferred\n quantity - the amount to be transferred\n Calling conditions:\n - When `from` and `to` are both non-zero, `from`'s `tokenId` will be\n transferred to `to`.\n - When `from` is zero, `tokenId` will be minted for `to`.\n - When `to` is zero, `tokenId` will be burned by `from`.\n - `from` and `to` are never both zero."
             },
-            "id": 1604,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_beforeTokenTransfers",
             "nameLocation": "31751:21:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1601,
               "nodeType": "ParameterList",
@@ -21095,12 +21069,14 @@
               "src": "31894:0:0"
             },
             "scope": 1638,
-            "src": "31742:154:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1617,
+            "nodeType": "FunctionDefinition",
+            "src": "32537:153:0",
             "body": {
               "id": 1616,
               "nodeType": "Block",
@@ -21113,13 +21089,11 @@
               "src": "31902:630:0",
               "text": " @dev Hook that is called after a set of serially-ordered token ids have been transferred.\n This includes minting.\n And also called after one token has been burned.\n startTokenId - the first token id to be transferred\n quantity - the amount to be transferred\n Calling conditions:\n - When `from` and `to` are both non-zero, `from`'s `tokenId` has been\n transferred to `to`.\n - When `from` is zero, `tokenId` has been minted for `to`.\n - When `to` is zero, `tokenId` has been burned by `from`.\n - `from` and `to` are never both zero."
             },
-            "id": 1617,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_afterTokenTransfers",
             "nameLocation": "32546:20:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1614,
               "nodeType": "ParameterList",
@@ -21244,12 +21218,14 @@
               "src": "32688:0:0"
             },
             "scope": 1638,
-            "src": "32537:153:0",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1627,
+            "nodeType": "FunctionDefinition",
+            "src": "32874:103:0",
             "body": {
               "id": 1626,
               "nodeType": "Block",
@@ -21295,13 +21271,11 @@
               "src": "32696:173:0",
               "text": " @dev Returns the message sender (defaults to `msg.sender`).\n If you are writing GSN compatible contracts, you need to override this function."
             },
-            "id": 1627,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_msgSenderERC721A",
             "nameLocation": "32883:17:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1619,
               "nodeType": "ParameterList",
@@ -21344,12 +21318,14 @@
               "src": "32933:9:0"
             },
             "scope": 1638,
-            "src": "32874:103:0",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
           },
           {
+            "id": 1637,
+            "nodeType": "FunctionDefinition",
+            "src": "33078:1920:0",
             "body": {
               "id": 1636,
               "nodeType": "Block",
@@ -21960,13 +21936,11 @@
               "src": "32983:90:0",
               "text": " @dev Converts a `uint256` to its ASCII `string` decimal representation."
             },
-            "id": 1637,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_toString",
             "nameLocation": "33087:9:0",
-            "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1631,
               "nodeType": "ParameterList",
@@ -22036,14 +22010,43 @@
               "src": "33134:19:0"
             },
             "scope": 1638,
-            "src": "33078:1920:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 19,
+              "name": "IERC721A",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1847,
+              "src": "905:8:0"
+            },
+            "id": 20,
+            "nodeType": "InheritanceSpecifier",
+            "src": "905:8:0"
+          }
+        ],
+        "canonicalName": "ERC721A",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 18,
+          "nodeType": "StructuredDocumentation",
+          "src": "389:495:0",
+          "text": " @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard,\n including the Metadata extension. Built to optimize for lower gas during batch mints.\n Assumes serials are sequentially minted starting at `_startTokenId()`\n (defaults to 0, e.g. 0, 1, 2, 3..).\n Assumes that an owner cannot have more than 2**64 - 1 (max value of uint64) of supply.\n Assumes that the maximum token id cannot exceed 2**256 - 1 (max value of uint256)."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          1638,
+          1847
+        ],
+        "name": "ERC721A",
+        "nameLocation": "894:7:0",
         "scope": 1639,
-        "src": "885:34115:0",
         "usedErrors": [
           1644,
           1647,
@@ -22062,6 +22065,7 @@
         ]
       }
     ],
-    "src": "84:34917:0"
-  }
+    "license": "MIT"
+  },
+  "id": 0
 }

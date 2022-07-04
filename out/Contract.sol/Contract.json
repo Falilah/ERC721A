@@ -1,56 +1,57 @@
 {
   "abi": [],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220885eb50600fa4cadd68eb7d716f03acd071de30d3e72d3d9a7a59472a826820a64736f6c634300080a0033",
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204ef6a9e2c29b6d780f8dcc8f9997b539f45637c6669a9f995dc9c906d24b0dd364736f6c634300080a0033",
     "sourceMap": "65:20:14:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052600080fdfea2646970667358221220885eb50600fa4cadd68eb7d716f03acd071de30d3e72d3d9a7a59472a826820a64736f6c634300080a0033",
+    "object": "0x6080604052600080fdfea26469706673582212204ef6a9e2c29b6d780f8dcc8f9997b539f45637c6669a9f995dc9c906d24b0dd364736f6c634300080a0033",
     "sourceMap": "65:20:14:-:0;;;;;",
     "linkReferences": {}
   },
+  "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/home/iwura/Documents/Dreamers/src/Contract.sol",
+    "absolutePath": "src/Contract.sol",
+    "id": 23585,
     "exportedSymbols": {
       "Contract": [
         23584
       ]
     },
-    "id": 23585,
-    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
+    "src": "39:47:14",
     "nodes": [
       {
         "id": 23583,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:14",
         "literals": [
           "solidity",
           "0.8",
           ".10"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "39:23:14"
+        ]
       },
       {
+        "id": 23584,
+        "nodeType": "ContractDefinition",
+        "src": "65:20:14",
         "abstract": false,
         "baseContracts": [],
         "canonicalName": "Contract",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 23584,
         "linearizedBaseContracts": [
           23584
         ],
         "name": "Contract",
         "nameLocation": "74:8:14",
-        "nodeType": "ContractDefinition",
-        "nodes": [],
         "scope": 23585,
-        "src": "65:20:14",
         "usedErrors": []
       }
     ],
-    "src": "39:47:14"
-  }
+    "license": "UNLICENSED"
+  },
+  "id": 14
 }

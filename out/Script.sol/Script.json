@@ -37,8 +37,13 @@
     "sourceMap": "",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "IS_SCRIPT()": "f8ccbf47",
+    "vm()": "3a768463"
+  },
   "ast": {
-    "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/Script.sol",
+    "absolutePath": "lib/forge-std/src/Script.sol",
+    "id": 3667,
     "exportedSymbols": {
       "Script": [
         3666
@@ -53,12 +58,13 @@
         22741
       ]
     },
-    "id": 3667,
-    "license": "Unlicense",
     "nodeType": "SourceUnit",
+    "src": "38:326:3",
     "nodes": [
       {
         "id": 3636,
+        "nodeType": "PragmaDirective",
+        "src": "38:31:3",
         "literals": [
           "solidity",
           ">=",
@@ -67,71 +73,59 @@
           "<",
           "0.9",
           ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "38:31:3"
+        ]
       },
       {
-        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/Vm.sol",
-        "file": "./Vm.sol",
         "id": 3637,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
+        "src": "71:18:3",
+        "absolutePath": "lib/forge-std/src/Vm.sol",
+        "file": "./Vm.sol",
+        "nameLocation": "-1:-1:-1",
         "scope": 3667,
         "sourceUnit": 6614,
-        "src": "71:18:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/console.sol",
-        "file": "./console.sol",
         "id": 3638,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
+        "src": "90:23:3",
+        "absolutePath": "lib/forge-std/src/console.sol",
+        "file": "./console.sol",
+        "nameLocation": "-1:-1:-1",
         "scope": 3667,
         "sourceUnit": 14678,
-        "src": "90:23:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/home/iwura/Documents/Dreamers/lib/forge-std/src/console2.sol",
-        "file": "./console2.sol",
         "id": 3639,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
+        "src": "114:24:3",
+        "absolutePath": "lib/forge-std/src/console2.sol",
+        "file": "./console2.sol",
+        "nameLocation": "-1:-1:-1",
         "scope": 3667,
         "sourceUnit": 22742,
-        "src": "114:24:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "abstract": true,
-        "baseContracts": [],
-        "canonicalName": "Script",
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "fullyImplemented": true,
         "id": 3666,
-        "linearizedBaseContracts": [
-          3666
-        ],
-        "name": "Script",
-        "nameLocation": "158:6:3",
         "nodeType": "ContractDefinition",
+        "src": "140:223:3",
         "nodes": [
           {
+            "id": 3642,
+            "nodeType": "VariableDeclaration",
+            "src": "171:28:3",
             "constant": false,
             "functionSelector": "f8ccbf47",
-            "id": 3642,
             "mutability": "mutable",
             "name": "IS_SCRIPT",
             "nameLocation": "183:9:3",
-            "nodeType": "VariableDeclaration",
             "scope": 3666,
-            "src": "171:28:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -167,14 +161,14 @@
             "visibility": "public"
           },
           {
-            "constant": true,
             "id": 3659,
+            "nodeType": "VariableDeclaration",
+            "src": "205:110:3",
+            "constant": true,
             "mutability": "constant",
             "name": "VM_ADDRESS",
             "nameLocation": "230:10:3",
-            "nodeType": "VariableDeclaration",
             "scope": 3666,
-            "src": "205:110:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -423,15 +417,15 @@
             "visibility": "private"
           },
           {
+            "id": 3665,
+            "nodeType": "VariableDeclaration",
+            "src": "322:38:3",
             "constant": true,
             "functionSelector": "3a768463",
-            "id": 3665,
             "mutability": "constant",
             "name": "vm",
             "nameLocation": "341:2:3",
-            "nodeType": "VariableDeclaration",
             "scope": 3666,
-            "src": "322:38:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -506,11 +500,22 @@
             "visibility": "public"
           }
         ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "Script",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3666
+        ],
+        "name": "Script",
+        "nameLocation": "158:6:3",
         "scope": 3667,
-        "src": "140:223:3",
         "usedErrors": []
       }
     ],
-    "src": "38:326:3"
-  }
+    "license": "Unlicense"
+  },
+  "id": 3
 }
