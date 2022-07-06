@@ -93,14 +93,24 @@ contract DreamersTest is Test {
     // }
 
     function testpresaleMint() public {
+
+        bytes32[] memory proof =  new bytes32[](2);
+        proof[0] =
+  0x5b70e80538acdabd6137353b0f9d8d149f4dba91e8be2e7946e409bfdbe685b9;
+  proof[1] =0x70e08b2550044020237f234427d6309de9db2c023ac9024ed06f96beb044bd42;
         
 
-        dreamer.setPresaleProps();
+        dreamer.setPresaleProps(0x73460d5b8b8b16dec2d9b062b0209a37f78d6c3a7850b12737fef77fc0b638db, 1756421907, 0.08 ether,5);
          vm.startPrank(bob);
          deal(bob, 20 ether);
-        dreamer.presaleMint(_merkleProof, quantity);
-        assertEq(dreamer.numberMinted(bob), 5);
+        vm.warp(1756421907);
+        dreamer.presaleMint{value:10 ether}(proof, 4);
+        assertEq(dreamer.numberMinted(bob), 4);
+        uint val = dreamer.totalSupply();
+        assertEq(val, 4);
         vm.stopPrank();
+        assertEq(dreamer.numberMinted(bob), 4);
+
     }
 
 

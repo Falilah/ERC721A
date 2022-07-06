@@ -96,8 +96,8 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
     require(numberMinted(msg.sender) + quantity <= maxPerAddress,
       "can not mint this many"
     );
-    _safeMint(msg.sender, quantity);
     refundIfOver(price * quantity);
+    _safeMint(msg.sender, quantity);
   }
 
 

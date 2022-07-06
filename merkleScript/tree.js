@@ -23,13 +23,14 @@ console.log("root is :", root);
 let address1 = leaves[0];
 // console.log(address1.toString("hex"));
 
-let whitelist1 = keccak256(address1);
+// let whitelist1 = keccak256(address1);
 // console.log(whitelist1.toString("hex"));
 
 //get proof of the first element
-let proof = merkletree.getHexProof(whitelist1);
+let proof = merkletree.getHexProof(leaves[0]);
 console.log("the proof for whitelist 1 is:", proof);
-
+let proofHashed = keccak256(proof).toString("hex");
+console.log("proof hashed", proofHashed);
 //verify an address
-let verify = merkletree.verify(proof, whitelist1, root);
+let verify = merkletree.verify(proof, address1, root);
 console.log(verify);
