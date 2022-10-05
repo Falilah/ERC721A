@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 
-contract DRM is ERC721A, Ownable, ReentrancyGuard {
+contract DreamerBay is ERC721A, Ownable, ReentrancyGuard {
     uint256 public constant PRESALE_MAX = 5000;
     uint256 public constant TEAM_MAX = 100; 
     uint256 public constant TOTAL_MAX = 10000; 
@@ -28,30 +28,30 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
 
 
      struct PresaleProps {
-    bytes32 merkleRoot;
-    uint32 startTime;
-    uint64 price;
-    uint64 maxPerAddress;
+        bytes32 merkleRoot;
+        uint32 startTime;
+        uint64 price;
+        uint64 maxPerAddress;
   }
 
   PresaleProps public presaleProps;
 
 
    struct PublicSaleProps {
-    uint32 startTime;
-    uint64 price;
-    uint64 maxPerAddress;
+      uint32 startTime;
+      uint64 price;
+      uint64 maxPerAddress;
   }
 
   PublicSaleProps public publicSaleProps;
 
 
   /////////////////MAPPINGs/////////////////////////////
-   mapping (address => bool) public teamMember;
+   mapping (address => uint256) public teamMember;
   mapping(address => bool) public memberHasMinted;
 
 
-  constructor() ERC721A("Dreamer", "DRM"){
+  constructor() ERC721A("DreamersBay", "DB"){
 
     }
 
@@ -87,7 +87,7 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
       saleStartTime != 0 && block.timestamp >= saleStartTime,
       "presale has not begun yet"
     );
-    require(totalSupply() + quantity <= TOTAL_MAX , "reached max supply");
+    require(totalSupply() + quantity <= PRESALE_MAX , "preSale max supply minted");
     bytes32 leaf = keccak256 (abi.encodePacked(msg.sender));
     require(
       MerkleProof.verify(_merkleProof, presaleProps.merkleRoot, leaf),
@@ -143,24 +143,23 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
       startTime != 0 && block.timestamp >= startTime,
       "public sale has not begun yet"
     );
-    require(totalSupply() + quantity <= 10000, "reached max supply");
+    require(totalSupply() + quantity <= TOTAL_MAX, "reached max supply");
     require(numberMinted(msg.sender) + quantity <= maxPerAddress,
       "can not mint this many"
     );
     refundIfOver(price * quantity);
     _safeMint(msg.sender, quantity);
   }
-  function addTeamMember(address member)  external onlyOwner{
-    teamMember[member] = true;
+  function addTeamMember(address member, uint amount )  external onlyOwner{
+    teamMember[member] += amount;
 
   }
   function teamMint() external nonReentrant{
-    require(teamMember[msg.sender] == true, "not a member on the team");
-    require(memberHasMinted[msg.sender] == false, "teamMint: you have previously minted your NFT");
-    require(totalSupply() + AMOUNTFORTEAM <= 10000, "reached max supply");
-    memberHasMinted[msg.sender] = true;
-    _safeMint(msg.sender, AMOUNTFORTEAM);
-
+    require(teamMember[msg.sender] > 0, "teamMint: No teamNFT assigned");
+    uint _amount = teamMember[msg.sender];
+    require(totalSupply() + _amount <= TEAM_MAX, "reached max supply");
+    teamMember[msg.sender] -= _amount;
+    _safeMint(msg.sender, _amount);
 
   }
 
@@ -183,8 +182,19 @@ contract DRM is ERC721A, Ownable, ReentrancyGuard {
 
   function tokenURI(uint256 _tokenId) public view override returns (string memory) {
 		require(_exists(_tokenId), "ERC721Metadata: URI query for nonexistent token");
-		return string(abi.encodePacked(baseTokenURI, _tokenId.toString(), ".json"));
+    if (!revealed) return '';
+		else {return string(abi.encodePacked(baseTokenURI, _tokenId.toString(), ".json"));
+    }
 	}
+
+  function _startTokenId() internal view override returns (uint256) {
+        return 1;
+    }
+
+    function RevealNFT(bool status) external onlyOwner{
+      revealed = status;
+    }
+
 
 
 

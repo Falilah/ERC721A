@@ -16,37 +16,109 @@
     }
   ],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea2646970667358221220b9f69365b7faabf203dcac30b2f62a9379dde668cd970f19775673937a5cce8064736f6c634300080a0033",
-    "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b50606f80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea264697066735822122057d61e15848eccce927eeb2518f20ac528d9076c4bf81eb509c9b7f2dbefe5e764736f6c634300080a0033",
+    "sourceMap": "92:128:16:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea2646970667358221220b9f69365b7faabf203dcac30b2f62a9379dde668cd970f19775673937a5cce8064736f6c634300080a0033",
-    "sourceMap": "92:128:17:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80630a9254e41460375780633f5a4a2a146037575b600080fd5b00fea264697066735822122057d61e15848eccce927eeb2518f20ac528d9076c4bf81eb509c9b7f2dbefe5e764736f6c634300080a0033",
+    "sourceMap": "92:128:16:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:26;",
     "linkReferences": {}
   },
   "methodIdentifiers": {
     "setUp()": "0a9254e4",
     "testExample()": "3f5a4a2a"
   },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"setUp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"testExample\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/test/Contract.t.sol\":\"ContractTest\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ERC721A/=lib/ERC721A/contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/ds-test/src/test.sol\":{\"keccak256\":\"0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5\",\"dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr\"]},\"src/test/Contract.t.sol\":{\"keccak256\":\"0xf75b692b1ec2568317dcc8d3949d0c206911221c8542a69a7c098348e8e371a4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://9e7176efea94ec8ecdb9a70737e7fee7c093bd6feffee0fa8dc7db5f97bd31b0\",\"dweb:/ipfs/QmRM4rEeSsZV7epZ18aJaVvggJa8UAcPM43P5Lqchc9M4G\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.10+commit.fc410830"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setUp"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "testExample"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ERC721A/=lib/ERC721A/contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/test/Contract.t.sol": "ContractTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/ds-test/src/test.sol": {
+        "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
+        "urls": [
+          "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
+          "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "src/test/Contract.t.sol": {
+        "keccak256": "0xf75b692b1ec2568317dcc8d3949d0c206911221c8542a69a7c098348e8e371a4",
+        "urls": [
+          "bzz-raw://9e7176efea94ec8ecdb9a70737e7fee7c093bd6feffee0fa8dc7db5f97bd31b0",
+          "dweb:/ipfs/QmRM4rEeSsZV7epZ18aJaVvggJa8UAcPM43P5Lqchc9M4G"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
   "ast": {
     "absolutePath": "src/test/Contract.t.sol",
-    "id": 24750,
+    "id": 24405,
     "exportedSymbols": {
       "ContractTest": [
-        24749
+        24404
       ],
       "DSTest": [
         3634
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "39:182:17",
+    "src": "39:182:16",
     "nodes": [
       {
-        "id": 24739,
+        "id": 24394,
         "nodeType": "PragmaDirective",
-        "src": "39:23:17",
+        "src": "39:23:16",
         "literals": [
           "solidity",
           "0.8",
@@ -54,30 +126,30 @@
         ]
       },
       {
-        "id": 24740,
+        "id": 24395,
         "nodeType": "ImportDirective",
-        "src": "64:26:17",
+        "src": "64:26:16",
         "absolutePath": "lib/ds-test/src/test.sol",
         "file": "ds-test/test.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 24750,
+        "scope": 24405,
         "sourceUnit": 3635,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 24749,
+        "id": 24404,
         "nodeType": "ContractDefinition",
-        "src": "92:128:17",
+        "src": "92:128:16",
         "nodes": [
           {
-            "id": 24744,
+            "id": 24399,
             "nodeType": "FunctionDefinition",
-            "src": "120:26:17",
+            "src": "120:26:16",
             "body": {
-              "id": 24743,
+              "id": 24398,
               "nodeType": "Block",
-              "src": "144:2:17",
+              "src": "144:2:16",
               "statements": []
             },
             "functionSelector": "0a9254e4",
@@ -85,32 +157,32 @@
             "kind": "function",
             "modifiers": [],
             "name": "setUp",
-            "nameLocation": "129:5:17",
+            "nameLocation": "129:5:16",
             "parameters": {
-              "id": 24741,
+              "id": 24396,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "134:2:17"
+              "src": "134:2:16"
             },
             "returnParameters": {
-              "id": 24742,
+              "id": 24397,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "144:0:17"
+              "src": "144:0:16"
             },
-            "scope": 24749,
+            "scope": 24404,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 24748,
+            "id": 24403,
             "nodeType": "FunctionDefinition",
-            "src": "152:66:17",
+            "src": "152:66:16",
             "body": {
-              "id": 24747,
+              "id": 24402,
               "nodeType": "Block",
-              "src": "182:36:17",
+              "src": "182:36:16",
               "statements": []
             },
             "functionSelector": "3f5a4a2a",
@@ -118,20 +190,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "testExample",
-            "nameLocation": "161:11:17",
+            "nameLocation": "161:11:16",
             "parameters": {
-              "id": 24745,
+              "id": 24400,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "172:2:17"
+              "src": "172:2:16"
             },
             "returnParameters": {
-              "id": 24746,
+              "id": 24401,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "182:0:17"
+              "src": "182:0:16"
             },
-            "scope": 24749,
+            "scope": 24404,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -144,15 +216,15 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          24749
+          24404
         ],
         "name": "ContractTest",
-        "nameLocation": "101:12:17",
-        "scope": 24750,
+        "nameLocation": "101:12:16",
+        "scope": 24405,
         "usedErrors": []
       }
     ],
     "license": "UNLICENSED"
   },
-  "id": 17
+  "id": 16
 }

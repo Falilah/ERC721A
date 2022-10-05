@@ -33,7 +33,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -76,7 +77,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -114,7 +116,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -152,7 +155,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -194,7 +198,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -247,7 +252,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -285,7 +291,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -323,7 +330,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -361,7 +369,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -376,46 +385,6 @@
       "artifacts": {
         "Ownable": {
           "0.8.10+commit.fc410830.Linux.gcc": "Ownable.sol/Ownable.json"
-        }
-      }
-    },
-    "lib/openzeppelin-contracts/contracts/security/Pausable.sol": {
-      "lastModificationDate": 1656933534130,
-      "contentHash": "d724f5d2ff0c2d7e4fd0916f7d27503b",
-      "sourceName": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
-      ],
-      "versionRequirement": "^0.8.0",
-      "artifacts": {
-        "Pausable": {
-          "0.8.10+commit.fc410830.Linux.gcc": "Pausable.sol/Pausable.json"
         }
       }
     },
@@ -441,7 +410,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -479,7 +449,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -517,7 +488,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -555,7 +527,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -593,7 +566,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -610,8 +584,8 @@
       }
     },
     "src/DRM.sol": {
-      "lastModificationDate": 1657129799542,
-      "contentHash": "4dfb50fd4745034200008881dd5a4911",
+      "lastModificationDate": 1664920894015,
+      "contentHash": "c66496a8f256e98a324ac1d50b59befc",
       "sourceName": "src/DRM.sol",
       "solcConfig": {
         "settings": {
@@ -631,7 +605,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -650,15 +625,15 @@
       ],
       "versionRequirement": "=0.8.10",
       "artifacts": {
-        "DRM": {
-          "0.8.10+commit.fc410830.Linux.gcc": "DRM.sol/DRM.json"
+        "DreamerBay": {
+          "0.8.10+commit.fc410830.Linux.gcc": "DRM.sol/DreamerBay.json"
         }
       }
     },
-    "src/dreamers.sol": {
-      "lastModificationDate": 1656933482115,
-      "contentHash": "7195ed91b29e48450ec50f20aff2b90a",
-      "sourceName": "src/dreamers.sol",
+    "src/royalty.sol": {
+      "lastModificationDate": 1664920299568,
+      "contentHash": "6c2e2c0dc63ebd615f1f8063ff61a544",
+      "sourceName": "src/royalty.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -677,7 +652,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -685,19 +661,11 @@
           "libraries": {}
         }
       },
-      "imports": [
-        "lib/ERC721A/contracts/ERC721A.sol",
-        "lib/ERC721A/contracts/IERC721A.sol",
-        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
-        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
-        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
-        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol"
-      ],
+      "imports": [],
       "versionRequirement": "=0.8.10",
       "artifacts": {
-        "Dreamers": {
-          "0.8.10+commit.fc410830.Linux.gcc": "dreamers.sol/Dreamers.json"
+        "RoyaltyVault": {
+          "0.8.10+commit.fc410830.Linux.gcc": "royalty.sol/RoyaltyVault.json"
         }
       }
     },
@@ -723,7 +691,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -741,56 +710,9 @@
         }
       }
     },
-    "src/test/dreamers.t.sol": {
-      "lastModificationDate": 1656933482115,
-      "contentHash": "7bf35169487715180b7d6f9774938993",
-      "sourceName": "src/test/dreamers.t.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/ERC721A/contracts/ERC721A.sol",
-        "lib/ERC721A/contracts/IERC721A.sol",
-        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
-        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
-        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
-        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol",
-        "src/dreamers.sol"
-      ],
-      "versionRequirement": "=0.8.10",
-      "artifacts": {
-        "DreamersTest": {
-          "0.8.10+commit.fc410830.Linux.gcc": "dreamers.t.sol/DreamersTest.json"
-        }
-      }
-    },
     "src/test/drm.t.sol": {
-      "lastModificationDate": 1657129910731,
-      "contentHash": "4995f9c521bee64a5a79b38a8568e603",
+      "lastModificationDate": 1664920907915,
+      "contentHash": "613f28469e91e418c366839bea42854c",
       "sourceName": "src/test/drm.t.sol",
       "solcConfig": {
         "settings": {
@@ -810,7 +732,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -838,6 +761,53 @@
       "artifacts": {
         "DreamersTest": {
           "0.8.10+commit.fc410830.Linux.gcc": "drm.t.sol/DreamersTest.json"
+        }
+      }
+    },
+    "src/test/royalty.t.sol": {
+      "lastModificationDate": 1664920656878,
+      "contentHash": "0bdd1cbd5560d1e3ac71761adeacbb4f",
+      "sourceName": "src/test/royalty.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src/royalty.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "RoyaltyTest": {
+          "0.8.10+commit.fc410830.Linux.gcc": "royalty.t.sol/RoyaltyTest.json"
         }
       }
     }
